@@ -54,6 +54,9 @@ namespace App.Scripts.Scenes.SceneFillwords.Features.FillwordsData
       if (MathfExtension.HasSqrt(_charIndexes.Length) == false)
         return false;
 
+      if (_charIndexes.Max() > _charIndexes.Length)
+        return false;
+
       return true;
     }
   }
